@@ -1,18 +1,23 @@
 {
-  "name": "app",
+  "name": "lets-chat-server",
   "version": "1.0.0",
-  "description": "lets make a chatting app",
+  "description": "Realtime chat server using Express and Socket.IO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^4.22.1",
-    "nodemon": "^2.0.21",
     "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
   }
 }
